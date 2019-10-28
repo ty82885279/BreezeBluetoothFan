@@ -1,0 +1,98 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;vertical-align: baseline;background: transparent;}
+body {line-height:1;font:62.5%/120% Helvetica, arial, verdana, sans-serif;}
+input[type=radio], input[type=checkbox] {padding:0;margin:0;}
+input[type=hidden]{display:none !important;}
+button {cursor:pointer;overflow:visible;}
+button:-moz-focus-inner {border:none;}
+ol, ul {list-style:none;}
+a {text-decoration:none;}
+blockquote {quotes:none;}
+blockquote:before, blockquote:after {content:'';content:none;}
+:focus {outline: 0;}
+ins {text-decoration:none;}
+table {border-collapse:collapse;border-spacing:0;}
+
+body {font-family: "helvetica neue", sans-serif; color: #858b8c;}
+h1 {font-size: 36px; line-height: 36px;}
+h2 {font-size: 28px; line-height: 32px; margin-bottom: 24px;}
+h1 span, h2 span {color: #161e1e;}
+p, li {font-size: 18px; line-height: 26px; margin-bottom: 24px; color: #565b5b;}
+header {position: relative; display: block; height: 272px; text-align: center;}
+header .icon {position: absolute; top: 60px; left: 50%; margin-left: -50px;}
+header h1 {position: absolute; top: 200px; margin: 0 auto;width: 100%;}
+section .container {width: 612px; height: 680px; margin: 0 auto; border-bottom: 1px solid #d3d6d6; position: relative;}
+section .thumbs, section .info {width: 264px; position: absolute; top: 50px;}
+section .thumbs {left: 21px;}
+section .iphone {display: block; width: 264px; height: 565px; text-indent: -999em; overflow: hidden; background: transparent url("../images/bg-iphone.png") no-repeat 0 0; position: relative; z-index: 100;}
+section .sequence {position: absolute; left: 19px; top: 80px; z-index: 50;}
+section .info {left: 325px; top: 70px;}
+section .button {display: inline-block; font-weight: bold; color: #fff; background-color: #c00; box-shadow: 0 3px 0 #400000; padding: 24px 24px; width: 216px; text-align: center; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; transition: 0.5s ease;}
+section .button:hover {background-color: #e00;}
+section .button:active {background-color: #900; box-shadow: none; margin-top: 3px;}
+footer {padding: 60px 0 60px; width: 612px; margin: 0 auto;}
+footer ul {text-align: center;}
+footer li {display: inline; padding: 0 12px; text-transform: uppercase; font-size: 14px; font-weight: bold;}
+footer li a {color: #161e1e; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; transition: 0.5s ease;}
+footer li a:hover {color: #c00;}
+footer li a:active {color: #000;}
+
+/* animations */
+section, footer {
+	opacity: 1;
+	-webkit-animation-name: fadein;
+	-webkit-animation-duration: 4s;
+	-webkit-animation-iteration-count: 1;
+	-moz-animation-name: fadein;
+	-moz-animation-duration: 4s;
+	-moz-animation-iteration-count: 1;
+	animation-name: fadein;
+	animation-duration: 4s;
+	animation-iteration-count: 1;
+}
+
+header .icon {
+	opacity: 1;
+	-webkit-animation-name: fadeinicon;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: 1;
+	-moz-animation-name: fadeinicon;
+	-moz-animation-duration: 2s;
+	-moz-animation-iteration-count: 1;
+	animation-name: fadeinicon;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+}
+
+header h1 {
+	opacity: 1;
+	-webkit-animation-name: fadeinh1;
+	-webkit-animation-duration: 2400ms;
+	-webkit-animation-iteration-count: 1;
+	-moz-animation-name: fadeinh1;
+	-moz-animation-duration: 2400ms;
+	-moz-animation-iteration-count: 1;
+	animation-name: fadeinh1;
+	animation-duration: 2400ms;
+	animation-iteration-count: 1;
+}
+
+@-webkit-keyframes fadein { 0% { opacity: 0;} 50% { opacity: 0;} 100% { opacity: 1;} }
+@-moz-keyframes fadein { 0% { opacity: 0;} 50% { opacity: 0;} 100% { opacity: 1;} }
+@keyframes fadein { 0% { opacity: 0;} 50% { opacity: 0;} 100% { opacity: 1;} }
+
+@-webkit-keyframes fadeinicon { 0% { opacity: 0; top: 132px;} 50% { opacity: 0;} 100% { opacity: 1; top: 60px;} }
+@-moz-keyframes fadeinicon { 0% { opacity: 0; top: 132px;} 50% { opacity: 0;} 100% { opacity: 1; top: 60px;} }
+@keyframes fadeinicon { 0% { opacity: 0; top: 132px;} 50% { opacity: 0;} 100% { opacity: 1; top: 60px;} }
+
+@-webkit-keyframes fadeinh1 { 0% { opacity: 0; top: 272px;} 60% { opacity: 0;} 100% { opacity: 1; top: 200px;} }
+@-moz-keyframes fadeinh1 { 0% { opacity: 0; top: 272px;} 60% { opacity: 0;} 100% { opacity: 1; top: 200px;} }
+@keyframes fadeinh1 { 0% { opacity: 0; top: 272px;} 60% { opacity: 0;} 100% { opacity: 1; top: 200px;} }
+
+@media only screen and (max-width: 611px) {
+    section .container {width: auto; height: auto; padding: 0;}
+    section .thumbs, section .info {position: relative; width: 264px; top: 0; left: 0; margin: 0 auto; padding: 30px 0 0;}
+    section .info {padding: 40px 0; width: 254px; text-align: center;}
+    section .button {width: 206px;}
+    section .sequence {top: 110px;}
+    footer {width: auto; padding:40px 0;}
+}
